@@ -1,10 +1,13 @@
+import Image from "next/image";
 import { StarSvg } from "./svg";
 
 const GlassProduct = ({
+  img,
   name,
   price,
   type,
 }: {
+  img: string;
   name: string;
   price: string;
   type: string;
@@ -12,7 +15,16 @@ const GlassProduct = ({
   return (
     <div className="group/glassp cursor-pointer flex items-center justify-between w-[300px] h-[80px] p-[5px] bg-gradient-to-r from-[#FFFFFF8F] to-[#00000018] hover:from-[#00000018] hover:to-[#FFFFFF8F] shadow-[0_4px_30px_rgba(0,0,0,0.1)] border-[0.2px] border-[rgba(0,0,0,0.1)] backdrop-blur-[4.8px] transition-all ease-in-out duration-[300ms]">
       <div className="flex items-center gap-[10px]">
-        <div className="bg-white w-[70px] h-[70px]"></div>
+        <div className="bg-white group/glassImg w-[70px] h-[70px]">
+          <Image
+            src={img}
+            alt="hair"
+            height={10000}
+            width={10000}
+            priority
+            className=" h-full w-fit transition-all duration-[300ms] ease object-fit"
+          />
+        </div>
         <div className="flex flex-col gap-[7px]">
           <p
             className={` ${

@@ -1,4 +1,5 @@
 import GlassProduct from "@/components/GlassProduct";
+import HomeSwiper from "@/components/HomeSwiper";
 import { BagSvg, StarSvg } from "@/components/svg";
 import Image from "next/image";
 
@@ -28,6 +29,9 @@ const FirstSection = () => {
               <BagSvg className="w-[20px] h-[20px] " />
             </div>
           </div>
+          <div className="absolute right-0 bottom-0 w-[300px]">
+            <HomeSwiper />
+          </div>
           <Image
             src={"/womannn.png"}
             alt="hero"
@@ -38,13 +42,15 @@ const FirstSection = () => {
           />
           <div className="absolute top-[200px] left-[160px]">
             <GlassProduct
+              img={"/hairs/hairOne.webp"}
               type={"black"}
               name="Color 350 4by6 closure"
               price="63,000"
             />
           </div>
-          <div className="absolute bottom-[130px] right-[260px]">
+          <div className="absolute bottom-[230px] right-[260px]">
             <GlassProduct
+              img={"/hairs/hairTwo.webp"}
               type={"white"}
               name="Color 950 9by6 closure"
               price="290,000"
