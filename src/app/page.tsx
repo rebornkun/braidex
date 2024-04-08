@@ -1,8 +1,9 @@
 import Image from "next/image";
-import FirstSection from "./FirstSection";
-import Partners from "./Partners";
-import SecondSection from "./SecondSection";
-import ThirdSection from "./ThirdSection";
+import FirstSection from "./sections/FirstSection";
+import Partners from "./sections/Partners";
+import SecondSection from "./sections/SecondSection";
+import ThirdSection from "./sections/ThirdSection";
+import ForthSection from "./sections/ForthSection";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Partners />
       <SecondSection />
       <ThirdSection />
+      <ForthSection />
     </main>
   );
 }

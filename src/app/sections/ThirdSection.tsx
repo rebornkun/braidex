@@ -7,7 +7,7 @@ const ThirdSection = () => {
   return (
     <section className="h-screen w-full relative overflow-hidden">
       <GateSvg className="absolute right-4 bottom-[60px] z-[1] scale-[1.3]" />
-      <div className="container mx-auto relative flex flex-col h-full w-full justify-center gap-[6rem] items-center overflow-visible z-[2]">
+      <div className="container mx-auto relative flex flex-col h-full w-full px-[20px] justify-center gap-[6rem] items-center overflow-visible z-[2]">
         <div className="flex w-full justify-between">
           <div className="text flex  gap-2 z-[2] relative h-fit w-fit">
             <TbNorthStar className="text-green text-[18px] animate-ping absolute right-0" />

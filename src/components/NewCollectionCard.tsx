@@ -17,7 +17,7 @@ const NewCollectionCard = ({
   oldPrice?: number;
 }) => {
   return (
-    <div className="group/collection min-w-[300px] min-h-[300px] bg-white shadow px-4 py-8 gap-4 flex flex-col justify-between relative cursor-pointer">
+    <div className="group/collection min-w-[280px] min-h-[280px] bg-white shadow px-4 py-8 gap-4 flex flex-col justify-between relative cursor-pointer">
       {discount && (
         <div className="w-[40px] h-[40px] bg-green flex items-center justify-center absolute top-4 left-4 rounded-full">
           <p
